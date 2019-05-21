@@ -4,10 +4,10 @@
 
 @import './normalize';
 @import './variables';
-@import './typography';
-@import './components/header';
-@import './components/key questions';
-@import './components/consultation';
+// @import './typography';
+// @import './components/header';
+@import './components/key-questions';
+// @import './components/consultation';
 
 * {
   box-sizing: border-box;
@@ -27,8 +27,8 @@
 //   --cl: calc(var(--col) + var(--gap));
 // }
 
-:root {
-   --col: 44px; 
-   --gap: 20px;
-   --cl: calc(var(--col) + var(--gap));
- }
+// :root {
+//    --col: 44px; 
+//    --gap: 20px;
+//    --cl: calc(var(--col) + var(--gap));
+//  }
