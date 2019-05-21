@@ -97,7 +97,7 @@ function serve() {
     ui: false,
     logPrefix: 'DevServer',
     host: 'localhost',
-    port: 8080,
+    port: 8081,
   });
 }
 
