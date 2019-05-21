@@ -1,0 +1,34 @@
+/*
+   Import partials below
+*/
+
+@import './normalize';
+@import './variables';
+@import './typography';
+@import './components/header';
+@import './components/key questions';
+@import './components/consultation';
+
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+* ::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+// :root {
+//   --col: 80px; 
+//   --gap: 20px;
+//   --cl: calc(var(--col) + var(--gap));
+// }
+
+:root {
+   --col: 44px; 
+   --gap: 20px;
+   --cl: calc(var(--col) + var(--gap));
+ }
