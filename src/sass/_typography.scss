@@ -1,0 +1,12 @@
+%acrom {
+  
+  font-family: 'Acrom', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@mixin font-acr($size, $weight) {
+  font-family: 'Acrom', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Acrom';
+    font-weight: normal;
+	font-style: normal;
+	src: url('Acrom-Regular.eot');
+	src: local('Acrom Regular'), local('Acrom-Regular'),
+		url('Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Acrom-Regular.woff') format('woff'),
+		url('Acrom-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Acrom';
+    font-weight: bold;
+	font-style: normal;
+	src: url('Acrom-Bold.eot');
+	src: local('Acrom Bold'), local('Acrom-Bold'),
+		url('Acrom-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Acrom-Bold.woff') format('woff'),
+		url('Acrom-Bold.ttf') format('truetype');
+}

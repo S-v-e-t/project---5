@@ -1,12 +1,19 @@
 .key-questions {
   display: flex;
+  color: $color-text;
+  text-align: left;
 
   &__title {
-    font-size: 20px;
-    font-family: 'Acrom', sans-serif;
-    color: rgb(34, 34, 34);
-    font-weight: bold;
+    @include font-acr(20px, 700);
     line-height: 1.5;
-    text-align: left;
+  }
+
+  &__text {
+    @extend %acrom;
+    line-height: 1.429;
+  }
+
+  &__bold-text {
+    @include font-acr(14px, 700);
   }
 }
