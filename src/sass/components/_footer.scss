@@ -1,3 +1,29 @@
 .footer {
-    width: 320px;
+  min-height: 479px;
+  width: 100%;
+  padding-top: 60px;
+  background-image: url(/build/images/Background/img-bg-footer-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+
+  &__title {
+    @include font-acr(20px, 700);
+    color: $color-select-text;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__line {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @extend %acrom;
+    color: $color-light;
+    line-height: 4.286;
+    padding: 16px;
+  }
 }

@@ -1,32 +1,28 @@
 .key-questions {
-  display: flex;
-  flex-direction: column;
+  min-height: 600px;
+  min-width: 320px;
   padding: 40px 30px;
   color: $color-text;
-  text-align: left;
-  justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     @include font-acr(20px, 700);
     line-height: 1.5;
-      }
+  }
 
- &__key-questions__list {
-  list-style-image: url(/build/images/marker.png) !important;
- }
+  &__key-questions__list {
+    list-style: url(/build/images/marker-1.png);
+  }
 
   &__text {
     @extend %acrom;
     line-height: 1.429;
-    padding-top: 22px !important;
-      }
-
-      // &__text:before {
-      //   content: "ƥ "; /* Добавляем в качестве маркера символ */
-      // }
+    padding-top: 22px;
+  }
 
   &__bold-text {
     @include font-acr(14px, 700);
   }
-
+}
