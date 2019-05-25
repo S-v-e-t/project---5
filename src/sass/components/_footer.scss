@@ -2,22 +2,29 @@
   min-height: 479px;
   width: 100%;
   padding-top: 60px;
-  background-image: url(/build/images/Background/img-bg-footer-mobile.jpg);
+  background-image: url(../images/Background/img-bg-footer-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
-
+  margin: 0 auto;
+  
   &__title {
     @include font-acr(20px, 700);
     color: $color-select-text;
     text-decoration: underline;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 300px;
   }
 
   &__line {
-    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  &__logo-wrp {
+    width: 29%;
+    text-align: center;
   }
 
   &__text {
@@ -25,5 +32,32 @@
     color: $color-light;
     line-height: 4.286;
     padding: 16px;
+    width: 69%;
+    text-align: center;
+  }
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-mobile@2x);
+  }
+}
+
+@media (min-width: 748px) {
+  .footer {
+    min-height: 479px;
+    background-image: url(../images/Background/img-bg-footer-tablet.jpg);
+  }
+  // &__line {
+  //   margin-bottom: 20px;
+  //   display: flex;
+  //   justify-content: start;
+  //   align-items: center;
+  // }
+}
+
+@media (min-width: 960px) {
+  .footer {
+    min-height: 700px;
+    background-image: url(../images/Background/img-bg-footer-desktop.jpg);
   }
 }
