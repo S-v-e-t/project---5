@@ -1,19 +1,32 @@
 .key-questions {
   display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
   color: $color-text;
   text-align: left;
+  justify-content: center;
+
 
   &__title {
     @include font-acr(20px, 700);
     line-height: 1.5;
-  }
+      }
+
+ &__key-questions__list {
+  list-style-image: url(/build/images/marker.png) !important;
+ }
 
   &__text {
     @extend %acrom;
     line-height: 1.429;
-  }
+    padding-top: 22px !important;
+      }
+
+      // &__text:before {
+      //   content: "ƥ "; /* Добавляем в качестве маркера символ */
+      // }
 
   &__bold-text {
     @include font-acr(14px, 700);
   }
-}
+
