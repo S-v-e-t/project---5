@@ -50,13 +50,11 @@
   }
 
   .footer__logo-wrp {
-    // min-width: 20%;
     text-align: left;
   }
 
   .footer__text {
     @include font-acr(18px, 400);
-    // min-width: 60%;
     text-align: left;
   }
 }
@@ -74,6 +72,6 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer {
-    background-image: url(../images/Background/img-bg-footer-mobile@2x);
+    background-image: url(../images/Background/img-bg-footer-mobile@2x.jpg);
   }
 }
