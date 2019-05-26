@@ -32,12 +32,14 @@
 
 @media (min-width: 748px) {
   .footer {
-    min-height: 479px;
+    min-height: 457px;
     background-image: url(../images/Background/img-bg-footer-tablet.jpg);
   }
 
   .footer__title {
     @include font-acr(30px, 700);
+    padding-top: 90px;
+    margin-bottom: 285px;
   }
 
   .footer__line {
@@ -61,8 +63,12 @@
 
 @media (min-width: 960px) {
   .footer {
-    min-height: 700px;
+    min-height: 1051px;
     background-image: url(../images/Background/img-bg-footer-desktop.jpg);
+  }
+  .footer__title {
+    padding-top: 260px;
+    margin-bottom: 630px;
   }
 }
 
