@@ -1,0 +1,94 @@
+.container {
+  width: 260px;
+  margin: auto;
+}
+.wrp {
+  &__header {
+    height: 798px;
+    width: 100%;
+    padding-top: 26px;
+    background-image: url(../images/Background/img-bg-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__contact-form {
+    width: 260px;
+    height: 378px;
+    background-color: $color-light-background;
+    box-shadow: 0px 12px 70px rgba(121,139,188,0.48);
+  }
+  &__form {
+    padding-top: 14px;
+  }
+}
+.content {
+  margin-bottom: 14px;
+  &__text {
+    @extend %acrom;
+    color: $color-light;
+    padding-top: 24px;
+  }
+  &__title {
+    @include font-acr(20px, bold);
+    color: $color-select-text;
+    letter-spacing: -0.25px;
+    padding-top: 22px;
+  }
+  &__text--bold {
+    font-weight: bold;
+  }
+  &__text--yellow {
+    color: $color-select-text2;
+  }
+  &__text--date {
+    @include font-acr(20px, bold);
+    padding-top: 4px;
+  }
+}
+.contact-form {
+  padding: 19px 20px 0;
+  &__title {
+    @include font-acr(16px, bold);
+    color: $color-dark;
+    line-height: 1.25;
+  }
+  &__text {
+    @include font-acr(13px, 400);
+    color: $color-dark;
+    line-height: 1.385;
+    padding-top: 12px;
+  }
+  &__text--wbr {
+      width: 150px;
+  }
+  &__input::placeholder {
+    @extend %acrom;
+    color: $color-text-light;
+    line-height: 1.2;
+  }
+  &__input {
+    width: 220px;
+    height: 40px;
+    border: 1px solid $color-text-light2;
+    padding: 0 14px;
+    margin-bottom: 12px;
+  }
+  &__submit {
+    @include font-acr(16px, bold);
+    color: $color-light;
+    text-transform: uppercase;
+    background-color: $color-button;
+    box-shadow: 0px 2px 10px #ff6b0896;
+    width: 220px;
+    height: 40px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 45px;
+  }
+  &__bottom-text {
+    @include font-acr(13px, 400);
+    color: $color-text-light2;
+    text-align: center;
+  }
+}
