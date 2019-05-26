@@ -1,19 +1,80 @@
 .key-questions {
-  display: flex;
+  min-height: 600px;
+  // min-width: 260px;
+  padding: 40px 0 0 30px;
   color: $color-text;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
 
   &__title {
     @include font-acr(20px, 700);
     line-height: 1.5;
+    margin: 0 30px 22px 0;
+  }
+
+  &__list {
+    list-style: none;
   }
 
   &__text {
+    list-style: url(../images/marker-1.png);
     @extend %acrom;
     line-height: 1.429;
+    padding: 0 0 16px 16px;
   }
 
   &__bold-text {
     @include font-acr(14px, 700);
+  }
+}
+
+@media (min-width: 768px) {
+  .key-questions {
+    min-height: 468px;
+  }
+  .key-questions__title {
+    @include font-acr(30px, 700);
+    line-height: 1.333;
+    text-align: left;
+  }
+  .key-questions__text {
+    @include font-acr(16px, 400);
+    line-height: 1.375;
+  }
+
+  .key-questions__bold-text {
+    @include font-acr(16px, 700);
+  }
+}
+
+@media (min-width: 960px) {
+  .key-questions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .key-questions__title {
+    @include font-acr(48px, 700);
+    line-height: 1.25;
+    width: 40%;
+    max-width: 580px;
+  }
+  .key-questions__list {
+    @include font-acr(18px, 400);
+    line-height: 1.667;
+    width: 40%;
+    max-width: 580px;
+  }
+
+  .key-questions__text {
+    @include font-acr(18px, 400);
+    line-height: 1.667;
+  }
+
+  .key-questions__bold-text {
+    @include font-acr(18px, 700);
+    line-height: 1.667;
   }
 }

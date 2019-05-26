@@ -9,6 +9,8 @@
 // @import './components/header';
 // @import './components/key-questions';
 // @import './components/consultation';
+@import './components/who-we-are';
+@import './components/footer';
 
 * {
   box-sizing: border-box;
@@ -22,14 +24,3 @@
   padding: 0;
 }
 
-// :root {
-//   --col: 80px; 
-//   --gap: 20px;
-//   --cl: calc(var(--col) + var(--gap));
-// }
-
-// :root {
-//    --col: 44px; 
-//    --gap: 20px;
-//    --cl: calc(var(--col) + var(--gap));
-//  }
