@@ -3,8 +3,8 @@
   width: 260px;
   padding: 40px 30px 50px;
   color: $color-text;
-//   display: flex;
-//   flex-direction: column;
+  //   display: flex;
+  //   flex-direction: column;
   margin: 0 auto;
 
   &__card-wrp {
@@ -20,7 +20,8 @@
     box-shadow: -20px 20px $color-light-chadow;
     position: absolute;
     z-index: 10;
-    // height: 485px;
+    height: 465px;
+    width: 225px;
   }
 
   &__card::before {
@@ -62,7 +63,7 @@
     text-transform: uppercase;
     color: $color-dark;
     margin-bottom: 20px;
-    padding-top: 45px;
+    // padding-top: 45px;
   }
 
   &__text {
