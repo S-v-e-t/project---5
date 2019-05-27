@@ -1,0 +1,78 @@
+.who-we-are {
+  min-height: 2490px;
+  width: 260px;
+  padding: 40px 30px 50px;
+  color: $color-text;
+//   display: flex;
+//   flex-direction: column;
+  margin: 0 auto;
+
+  &__card-wrp {
+    position: relative;
+    padding-top: 35px;
+    height: 505px;
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    padding: 0 21px 0;
+    background-color: $color-light;
+    box-shadow: -20px 20px $color-light-chadow;
+    position: absolute;
+    z-index: 10;
+    // height: 485px;
+  }
+
+  &__card::before {
+    content: '';
+    background-color: $color-select-text;
+    width: 60px;
+    height: 2px;
+    display: block;
+    margin: 20px -41px;
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 5;
+  }
+
+  &__medal-wrp {
+    // padding: 25px 0;
+    text-align: center;
+  }
+
+  &__title {
+    @include font-acr(20px, 700);
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+
+  &__subtitle {
+    @include font-acr(16px, 700);
+    line-height: 1.313;
+    margin-bottom: 23px;
+  }
+
+  &__card-title {
+    @include font-acr(18px, 700);
+    line-height: 1.444;
+    text-transform: uppercase;
+    color: $color-dark;
+    margin-bottom: 20px;
+    padding-top: 45px;
+  }
+
+  &__text {
+    @extend %acrom;
+    line-height: 1.5;
+  }
+
+  &__bold-text {
+    @include font-acr(14px, 700);
+    color: $color-dark;
+    line-height: 1.5;
+  }
+}
