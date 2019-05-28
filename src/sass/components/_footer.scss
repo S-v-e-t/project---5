@@ -70,8 +70,20 @@
   }
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .footer {
     background-image: url(../images/Background/img-bg-footer-mobile@2x.jpg);
+  }
+}
+
+@media (device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-tablet@2x.jpg);
+  }
+}
+
+@media (max-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-desktop@2x.jpg);
   }
 }

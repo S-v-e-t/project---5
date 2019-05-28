@@ -1,3 +1,9 @@
+// .un-bg {
+//   width: 142px;
+//   height: 125px;
+//   fill: $color-select-text;
+// }
+
 .who-we-are {
   min-height: 2490px;
   width: 260px;
@@ -6,6 +12,10 @@
   //   display: flex;
   //   flex-direction: column;
   margin: 0 auto;
+
+  &__cards {
+    margin-bottom: 65px;
+  }
 
   &__card-wrp {
     position: relative;
@@ -22,6 +32,9 @@
     z-index: 10;
     height: 465px;
     width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__card::before {
@@ -41,8 +54,10 @@
   }
 
   &__medal-wrp {
-    // padding: 25px 0;
-    text-align: center;
+    margin-bottom: 20px;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   &__title {
@@ -75,5 +90,30 @@
     @include font-acr(14px, 700);
     color: $color-dark;
     line-height: 1.5;
+  }
+
+  // tender
+  &__tender-title {
+    @include font-acr(24px, 700);
+    color: $color-dark;
+    line-height: 1.25;
+  }
+
+  &__tender-text {
+    @extend %acrom;
+    color: $color-text-light;
+    line-height: 1.5;
+    padding: 17px 0 40px;
+  }
+
+  &__partner-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__partner {
+    padding: 0;
   }
 }
