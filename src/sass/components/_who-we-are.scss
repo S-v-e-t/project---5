@@ -3,11 +3,14 @@
 //   height: 125px;
 //   fill: $color-select-text;
 // }
+.pad {
+  padding: 0 30px 0;
+}
 
 .who-we-are {
-  min-height: 2490px;
+  // min-height: 2490px;
   width: 260px;
-  padding: 40px 30px 50px;
+  padding: 40px 0 50px;
   color: $color-text;
   //   display: flex;
   //   flex-direction: column;
@@ -93,6 +96,10 @@
   }
 
   // tender
+&__tender {
+  // background: url(../)
+}
+
   &__tender-title {
     @include font-acr(24px, 700);
     color: $color-dark;
@@ -106,14 +113,15 @@
     padding: 17px 0 40px;
   }
 
+  // partner
   &__partner-links {
+    height: 295px;
+    width: 260px;
+    // padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  &__partner {
-    padding: 0;
   }
 }
