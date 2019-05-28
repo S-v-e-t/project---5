@@ -96,9 +96,12 @@
   }
 
   // tender
-&__tender {
-  // background: url(../)
-}
+  &__tender {
+    background: url(../images/Background/img-un.png);
+    background-repeat: no-repeat;
+    background-size: 142 125;
+    background-position: top center;
+  }
 
   &__tender-title {
     @include font-acr(24px, 700);
@@ -123,5 +126,31 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .who-we-are {
+    min-height: 1240px;
+    min-width: 748px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .who-we-are__title {
+    @include font-acr(30px, 700);
+    line-height: 1.333;
+    text-align: left;
+  }
+
+  .who-we-are__cards {
+    display: flex;
+    width: 730px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .who-we-are__card {
+    width: 240px;
   }
 }
