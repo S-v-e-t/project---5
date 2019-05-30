@@ -7,13 +7,11 @@
 @import './typography';
 @import './fonts';
 @import './components/header';
-// @import './components/key-questions';
-// @import './components/consultation';
-// @import './components/who-we-are';
-// @import './components/footer';
-// @import './components/it-area';
+@import './components/key-questions';
+@import './components/it-area';
 @import './components/it-path';
-
+@import './components/who-we-are';
+@import './components/footer';
 
 * {
   box-sizing: border-box;

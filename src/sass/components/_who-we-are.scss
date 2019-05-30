@@ -1,0 +1,237 @@
+// .un-bg {
+//   width: 142px;
+//   height: 125px;
+//   fill: $color-select-text;
+// }
+.pad {
+  padding: 0 30px 0;
+}
+
+.card-1 {
+  background-image: url(../images/numbers/01.png);
+}
+
+.card-2 {
+  background-image: url(../images/numbers/02.png);
+}
+
+.card-3 {
+  background-image: url(../images/numbers/03.png);
+}
+
+.who-we-are {
+  // min-height: 2490px;
+  width: 260px;
+  padding: 40px 0 50px;
+  color: $color-text;
+  //   display: flex;
+  //   flex-direction: column;
+  margin: 0 auto;
+
+  &__cards {
+    margin-bottom: 65px;
+  }
+
+  // &__card-wrp {
+  //   position: relative;
+  //   padding-top: 35px;
+  //   height: 505px;
+  //   margin-bottom: 20px;
+  // }
+
+  // &__card {
+  //   padding: 0 21px 0;
+  //   background-color: $color-light;
+  //   box-shadow: -20px 20px $color-light-chadow;
+  //   position: absolute;
+  //   z-index: 10;
+  //   height: 465px;
+  //   width: 225px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
+
+  // &__card::before {
+  //   content: '';
+  //   background-color: $color-select-text;
+  //   width: 60px;
+  //   height: 2px;
+  //   display: block;
+  //   margin: 20px -41px;
+  // }
+
+  // &__number {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0px;
+  //   z-index: 5;
+  // }
+
+  &__card-wrp {
+    // position: relative;
+    padding-top: 35px;
+    height: 505px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &__card {
+    padding: 0 21px 0;
+    background-color: $color-light;
+    box-shadow: -20px 20px $color-light-chadow;
+    height: 465px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card::before {
+    content: '';
+    background-color: $color-select-text;
+    width: 60px;
+    height: 2px;
+    display: block;
+    margin: 20px -41px;
+  }
+
+  &__medal-wrp {
+    margin-bottom: 20px;
+  }
+
+  &__medal {
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include font-acr(20px, 700);
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+
+  &__subtitle {
+    @include font-acr(16px, 700);
+    line-height: 1.313;
+    margin-bottom: 23px;
+  }
+
+  &__card-title {
+    @include font-acr(18px, 700);
+    line-height: 1.444;
+    text-transform: uppercase;
+    color: $color-dark;
+    margin-bottom: 20px;
+    // padding-top: 45px;
+  }
+
+  &__text {
+    @extend %acrom;
+    line-height: 1.5;
+  }
+
+  &__bold-text {
+    @include font-acr(14px, 700);
+    color: $color-dark;
+    line-height: 1.5;
+  }
+
+  // tender
+  &__tender {
+    background: url(../images/Background/img-un.png);
+    background-repeat: no-repeat;
+    background-size: 142 125;
+    background-position: top center;
+  }
+
+  &__tender-title {
+    @include font-acr(24px, 700);
+    color: $color-dark;
+    line-height: 1.25;
+  }
+
+  &__tender-text {
+    @extend %acrom;
+    color: $color-text-light;
+    line-height: 1.5;
+    padding: 17px 0 40px;
+  }
+
+  // partner
+  &__partner-links {
+    height: 295px;
+    width: 260px;
+    // padding: 0;
+    // margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .who-we-are {
+    min-height: 1240px;
+    min-width: 748px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .who-we-are__title {
+    @include font-acr(30px, 700);
+    line-height: 1.333;
+    text-align: left;
+  }
+
+  .who-we-are__container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+  }
+
+  .who-we-are__cards {
+    display: flex;
+    // width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .who-we-are__card-wrp {
+    width: 29%;
+    margin: 0 20px;
+  }
+
+  .who-we-are__tender {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .who-we-are__partners {
+    margin: 0 auto;
+  }
+
+  .who-we-are__partner-links {
+    width: 660px;
+  }
+
+  .who-we-are__partner {
+    padding: 5px;
+  }
+}
+
+// @media (min-width: 960px) {
+//   .who-we-are {
+//     min-height: 980px;
+//     // min-width: 1170px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .who-we-are__container {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+// }
