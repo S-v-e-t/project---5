@@ -1,8 +1,3 @@
-// .un-bg {
-//   width: 142px;
-//   height: 125px;
-//   fill: $color-select-text;
-// }
 .pad {
   padding: 0 30px 0;
 }
@@ -20,56 +15,16 @@
 }
 
 .who-we-are {
-  // min-height: 2490px;
   width: 260px;
   padding: 40px 0 50px;
   color: $color-text;
-  //   display: flex;
-  //   flex-direction: column;
   margin: 0 auto;
 
   &__cards {
     margin-bottom: 65px;
   }
 
-  // &__card-wrp {
-  //   position: relative;
-  //   padding-top: 35px;
-  //   height: 505px;
-  //   margin-bottom: 20px;
-  // }
-
-  // &__card {
-  //   padding: 0 21px 0;
-  //   background-color: $color-light;
-  //   box-shadow: -20px 20px $color-light-chadow;
-  //   position: absolute;
-  //   z-index: 10;
-  //   height: 465px;
-  //   width: 225px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
-
-  // &__card::before {
-  //   content: '';
-  //   background-color: $color-select-text;
-  //   width: 60px;
-  //   height: 2px;
-  //   display: block;
-  //   margin: 20px -41px;
-  // }
-
-  // &__number {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0px;
-  //   z-index: 5;
-  // }
-
   &__card-wrp {
-    // position: relative;
     padding-top: 35px;
     height: 505px;
     margin-bottom: 20px;
@@ -123,7 +78,6 @@
     text-transform: uppercase;
     color: $color-dark;
     margin-bottom: 20px;
-    // padding-top: 45px;
   }
 
   &__text {
@@ -162,8 +116,6 @@
   &__partner-links {
     height: 295px;
     width: 260px;
-    // padding: 0;
-    // margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -173,7 +125,6 @@
 
 @media (min-width: 768px) {
   .who-we-are {
-    min-height: 1240px;
     min-width: 748px;
     display: flex;
     flex-direction: column;
@@ -188,12 +139,10 @@
   .who-we-are__container {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
   }
 
   .who-we-are__cards {
     display: flex;
-    // width: 720px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -206,6 +155,10 @@
   .who-we-are__tender {
     width: 400px;
     margin: 0 auto;
+  }
+
+  .who-we-are__tender-title {
+    text-transform: uppercase;
   }
 
   .who-we-are__partners {
@@ -221,17 +174,73 @@
   }
 }
 
-// @media (min-width: 960px) {
-//   .who-we-are {
-//     min-height: 980px;
-//     // min-width: 1170px;
-//     display: flex;
-//     flex-direction: column;
-//   }
+@media (min-width: 1200px) {
+  .who-we-are {
+    min-width: 1170px;
+  }
 
-//   .who-we-are__container {
-//     display: flex;
-//     flex-direction: row;
-//   }
+  .who-we-are__tender {
+    padding: 0;
+  }
 
-// }
+  .who-we-are__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+
+  .who-we-are__title {
+    width: 100%;
+    @include font-acr(48px, 700);
+    line-height: 1.25;
+    margin-bottom: 60px;
+  }
+
+  .who-we-are__cards {
+    padding: 0;
+    display: flex;
+    width: 1140px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .who-we-are__card-wrp {
+    margin: 0;
+    height: auto;
+  }
+
+  .who-we-are__card {
+    flex-direction: row;
+    box-shadow: none;
+    height: auto;
+    width: 390px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .who-we-are__card::before {
+    display: none;
+  }
+
+  .who-ware__card-text {
+    width: auto;
+  }
+
+  .who-we-are__card-title {
+    @include font-acr(24px, 700);
+    line-height: 1.25;
+  }
+
+  .card-1 {
+    background-image: url(../images/numbers/01d.png);
+  }
+
+  .card-2 {
+    background-image: url(../images/numbers/02d.png);
+  }
+
+  .card-3 {
+    background-image: url(../images/numbers/03d.png);
+  }
+}
