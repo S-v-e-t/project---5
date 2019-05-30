@@ -8,7 +8,7 @@
   text-align: center;
   background-size: cover;
   margin: 0 auto;
-  
+
   &__title {
     @include font-acr(20px, 700);
     color: $color-select-text;
@@ -19,45 +19,72 @@
   }
 
   &__line {
-    margin: 0 auto;
-  }
-
-  &__logo-wrp {
-    width: 29%;
     text-align: center;
+    margin: 0 auto;
   }
 
   &__text {
     @extend %acrom;
     color: $color-light;
-    line-height: 4.286;
-    padding: 16px;
-    width: 69%;
-    text-align: center;
-  }
-}
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .footer {
-    background-image: url(../images/Background/img-bg-footer-mobile@2x);
+    padding: 16px 14px;
   }
 }
 
 @media (min-width: 748px) {
   .footer {
-    min-height: 479px;
+    min-height: 457px;
     background-image: url(../images/Background/img-bg-footer-tablet.jpg);
   }
-  // &__line {
-  //   margin-bottom: 20px;
-  //   display: flex;
-  //   justify-content: start;
-  //   align-items: center;
-  // }
+
+  .footer__title {
+    @include font-acr(30px, 700);
+    padding-top: 90px;
+    margin-bottom: 285px;
+  }
+
+  .footer__line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .footer__logo-wrp {
+    text-align: left;
+  }
+
+  .footer__text {
+    @include font-acr(18px, 400);
+    text-align: left;
+  }
 }
 
 @media (min-width: 960px) {
   .footer {
-    min-height: 700px;
+    min-height: 1051px;
     background-image: url(../images/Background/img-bg-footer-desktop.jpg);
+  }
+
+  .footer__title {
+    padding-top: 260px;
+    margin-bottom: 630px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-mobile@2x.jpg);
+  }
+}
+
+@media (device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-tablet@2x.jpg);
+  }
+}
+
+@media (max-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../images/Background/img-bg-footer-desktop@2x.jpg);
   }
 }

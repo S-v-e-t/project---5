@@ -6,14 +6,14 @@
 @import './variables';
 @import './typography';
 @import './fonts';
-// @import './components/header';
-// @import './components/key-questions';
-// @import './components/consultation';
+@import './components/header';
+@import './components/key-questions';
+@import './components/it-area';
+@import './components/it-path';
 @import './components/who-we-are';
 @import './components/footer';
 
 * {
-  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -23,4 +23,3 @@
   margin: 0;
   padding: 0;
 }
-
