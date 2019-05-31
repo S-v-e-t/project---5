@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.consultation-background {
+  height: 1094px;
+  width: 100%;
+  background-color: $color-light-background;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: 768px) {
+    height: 570px;
+  }
+  @media (min-width: 1200px) {
+    height: 857px;
+  }
+}
+
+.сonsultation-wrp {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 34px;
+  @media (min-width: 768px) {
+    width: 748px;
+    padding-top: 56px;
+  }
+  @media (min-width: 1200px) {
+    width: 1190px;
+    padding-top: 100px;
+    position: relative;
+  }
+}
+.consultation {
+  padding: 0 18px 0 17px;
+  &__title {
+    @include font-acr(20px, bold);
+    color: $color-dark;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 24px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+      width: 600px;
+      padding-top: 42px;
+      line-height: 40px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1200px) {
+      font-size: 48px;
+      width: 1100px;
+      padding-top: 82px;
+      line-height: 54px;
+    }
+  }
+  &__cards {
+    margin-bottom: 66px;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 14px;
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1200px) {
+      padding-top: 70px;
+    }
+  }
+  &__number {
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0 auto;
+    width: 225px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 34px;
+    @media (min-width: 1200px) {
+      width: 350px;
+    }
+    &--1 {
+      background-image: url(../images/numbers/01.png);
+    }
+    &--2 {
+      background-image: url(../images/numbers/02.png);
+    }
+    &--3 {
+      background-image: url(../images/numbers/03.png);
+    }
+  }
+  &__card {
+    box-shadow: 0px 15px 32px rgba(0, 0, 0, 0.16);
+    background-color: $color-light;
+    height: 229px;
+    @media (min-width: 1200px) {
+      height: 276px;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: $color-select-text;
+      top: 24px;
+      right: 12px;
+      position: relative;
+      @media (min-width: 1200px) {
+        top: 48px;
+      }
+    }
+    &-description {
+      @include font-acr(14px, 400);
+      color: $color-dark;
+      line-height: 22px;
+      margin: 0 auto;
+      padding-top: 34px;
+      width: 165px;
+      letter-spacing: 1px;
+      @media (min-width: 1200px) {
+        padding-top: 58px;
+        line-height: 35px;
+        width: 270px;
+        letter-spacing: 0;
+        font-size: 18px;
+      }
+      &--bold {
+        font-weight: bold;
+      }
+    }
+  }
+  &__button {
+    text-align: center;
+  }
+  &__submit {
+    @include font-acr(14px, bold);
+    color: $color-light;
+    text-transform: uppercase;
+    background-color: $color-button;
+    box-shadow: 0px 2px 10px #ff6b0896;
+    width: 225px;
+    height: 106px;
+    border: none;
+    line-height: 20px;
+    @media (min-width: 768px) {
+      width: 530px;
+      font-size: 18px;
+      height: 70px;
+      letter-spacing: 0.5px;
+      text-transform: none;
+    }
+    @media (min-width: 1200px) {
+      width: 813px;
+      height: 109px;
+      font-size: 25px;
+    }
+  }
+}
