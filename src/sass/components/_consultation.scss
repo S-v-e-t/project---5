@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.consultation-background {
+.consultation--background {
   height: 1094px;
   width: 100%;
   background-color: $color-light-background;
@@ -24,17 +24,14 @@
   }
 }
 
-.сonsultation-wrp {
+.consultation--wrp {
   width: 260px;
   margin: 0 auto;
-  padding-top: 34px;
   @media (min-width: 768px) {
     width: 748px;
-    padding-top: 56px;
   }
   @media (min-width: 1200px) {
     width: 1190px;
-    padding-top: 100px;
     position: relative;
   }
 }
