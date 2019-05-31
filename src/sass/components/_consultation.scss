@@ -58,7 +58,7 @@
     }
   }
   &__cards {
-    margin-bottom: 66px;
+    margin-bottom: 36px;
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -74,8 +74,7 @@
     background-position: top right;
     margin: 0 auto;
     width: 225px;
-    margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 6px;
     padding-top: 34px;
     @media (min-width: 1200px) {
       width: 350px;
