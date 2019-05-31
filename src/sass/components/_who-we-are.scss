@@ -210,7 +210,7 @@
   }
 
   .who-we-are__card {
-    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
     box-shadow: none;
     height: auto;
@@ -222,8 +222,8 @@
     display: none;
   }
 
-  &__medal-wrp {
-    align-self: flex-start;
+  // &__medal-wrp {
+  //   align-self: flex-start;
     //   margin-top: 0;
     //   padding-top: 0;
   }
