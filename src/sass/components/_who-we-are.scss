@@ -201,7 +201,7 @@
     display: flex;
     width: 1140px;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .who-we-are__card-wrp {
@@ -210,7 +210,7 @@
   }
 
   .who-we-are__card {
-    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     box-shadow: none;
     height: auto;
@@ -222,16 +222,15 @@
     display: none;
   }
 
-  // &__medal-wrp {
-  //   align-self: flex-start;
+  &__medal-wrp {
+    align-self: flex-start;
+    //   margin-top: 0;
+    //   padding-top: 0;
+
+    // &__medal {
     //   margin-top: 0;
     //   padding-top: 0;
   }
-
-  // &__medal {
-  //   margin-top: 0;
-  //   padding-top: 0;
-  // }
 
   .who-ware__card-text {
     width: auto;
