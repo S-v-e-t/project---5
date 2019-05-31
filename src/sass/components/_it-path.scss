@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
 }
-.path {
+.path--background {
   height: 562px;
   width: 100%;
   background-image: url(../images/Background/img-bg-mobile.png);
@@ -22,38 +23,38 @@
     background-image: url(/../images/Background/img-bg-desktop.png);
     height: 643px;
   }
-  &__wrp {
-    width: 260px;
-    margin: 0 auto;
-    padding-top: 34px;
-    @media (min-width: 768px) {
-      width: 620px;
-      padding-top: 56px;
-    }
-    @media (min-width: 1200px) {
-      width: 1190px;
-      padding-top: 100px;
-      position: relative;
-    }
+}
+.path--wrp {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 34px;
+  @media (min-width: 768px) {
+    width: 620px;
+    padding-top: 56px;
   }
-  &__header {
-    @include font-acr(16px, bold);
-    color: $color-light;
-    line-height: 20px;
-    padding-bottom: 22px;
-    letter-spacing: 0.46px;
-    @media (min-width: 768px) {
-      font-size: 22px;
-      letter-spacing: -0.4px;
-      line-height: 28px;
-      padding-bottom: 34px;
-    }
-    @media (min-width: 1200px) {
-      font-size: 30px;
-      width: 660px;
-      line-height: 34px;
-      padding-bottom: 20px;
-    }
+  @media (min-width: 1200px) {
+    width: 1190px;
+    padding-top: 100px;
+    position: relative;
+  }
+}
+.path {
+  @include font-acr(16px, bold);
+  color: $color-light;
+  line-height: 20px;
+  padding-bottom: 22px;
+  letter-spacing: 0.46px;
+  @media (min-width: 768px) {
+    font-size: 22px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    padding-bottom: 34px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    width: 660px;
+    line-height: 34px;
+    padding-bottom: 20px;
   }
   &__description {
     @include font-acr(14px, bold);
