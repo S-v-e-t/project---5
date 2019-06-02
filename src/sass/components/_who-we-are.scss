@@ -35,7 +35,9 @@
   &__card {
     padding: 0 21px 0;
     background-color: $color-light;
-    box-shadow: -20px 20px $color-light-chadow;
+    // box-shadow: -20px 20px $color-light-chadow;
+    box-shadow: -18px 18px 1px 2px hsla(0, 0%, 0%, 0.1),
+      0 15px 15px 15px hsla(0, 0%, 0%, 0.05);
     height: 465px;
     width: 225px;
     display: flex;
@@ -43,7 +45,7 @@
     justify-content: space-between;
   }
 
-  &__card::before {
+  &__card-title::before {
     content: '';
     background-color: $color-select-text;
     width: 60px;
@@ -52,9 +54,9 @@
     margin: 20px -41px;
   }
 
-  // &__medal-wrp {
-  //   margin: auto auto 20px;
-  // }
+  &__medal-wrp {
+    margin: 0 auto 20px;
+  }
 
   // &__medal {
   //   margin: 0 auto;
@@ -137,6 +139,7 @@
   }
 
   .who-we-are__container {
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -149,12 +152,13 @@
 
   .who-we-are__card-wrp {
     width: 29%;
-    margin: 0 20px;
+    // width: 220px;
+    margin: 0 22px;
   }
 
   .who-we-are__card {
     display: flex;
-    width: 225px;
+    // width: 225px;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -219,20 +223,21 @@
   .who-we-are__card-wrp {
     margin: 0;
     height: auto;
+    width: 390px;
   }
 
   .who-we-are__card {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    // align-items: flex-start;
     flex-direction: row;
     box-shadow: none;
     height: auto;
-    // width: 390px;
+    width: 380px;
     margin: 0;
   }
 
-  .who-we-are__card::before {
+  .who-we-are__card-title::before {
     display: none;
   }
 
@@ -246,14 +251,14 @@
   //   //   padding-top: 0;
   // }
 
-  .who-ware__card-text {
-    width: auto;
-  }
-
   .who-we-are__card-title {
     @include font-acr(24px, 700);
     line-height: 1.25;
   }
+
+  // .who-ware__card-text {
+  //   width: auto;
+  // }
 
   .card-1 {
     background-image: url(../images/numbers/01d.png);
